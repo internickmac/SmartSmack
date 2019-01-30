@@ -10,6 +10,7 @@
 		8457DDF621F93B300059D001 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457DDF521F93B300059D001 /* ChatVC.swift */; };
 		8457DDF821F93B4B0059D001 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457DDF721F93B4B0059D001 /* ChannelVC.swift */; };
 		8457DDFA21F944350059D001 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8457DDF921F944350059D001 /* GradientView.swift */; };
+		84907E1D22012AC2008620B9 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84907E1C22012AC2008620B9 /* CreateAccountVC.swift */; };
 		84927C3421FFE1E000A23492 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84927C3321FFE1E000A23492 /* Constants.swift */; };
 		84927C3621FFE9B500A23492 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84927C3521FFE9B500A23492 /* LoginVC.swift */; };
 		84FA4E4421F7EB990048F91A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FA4E4321F7EB990048F91A /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 		8457DDF521F93B300059D001 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
 		8457DDF721F93B4B0059D001 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		8457DDF921F944350059D001 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		84907E1C22012AC2008620B9 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
 		84927C3321FFE1E000A23492 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		84927C3521FFE9B500A23492 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		84FA4E4021F7EB990048F91A /* SmartSmack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartSmack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 				8457DDF521F93B300059D001 /* ChatVC.swift */,
 				8457DDF721F93B4B0059D001 /* ChannelVC.swift */,
 				84927C3521FFE9B500A23492 /* LoginVC.swift */,
+				84907E1C22012AC2008620B9 /* CreateAccountVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			files = (
 				8457DDF821F93B4B0059D001 /* ChannelVC.swift in Sources */,
 				8457DDF621F93B300059D001 /* ChatVC.swift in Sources */,
+				84907E1D22012AC2008620B9 /* CreateAccountVC.swift in Sources */,
 				84927C3621FFE9B500A23492 /* LoginVC.swift in Sources */,
 				8457DDFA21F944350059D001 /* GradientView.swift in Sources */,
 				84FA4E4421F7EB990048F91A /* AppDelegate.swift in Sources */,
