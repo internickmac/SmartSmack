@@ -273,7 +273,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNY-yp-iKR">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNY-yp-iKR" customClass="RoundedButton" customModule="SmartSmack" customModuleProvider="target">
                                 <rect key="frame" x="62" y="299" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -337,6 +337,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="CsG-kX-NiV" eventType="touchUpInside" id="2vX-2q-foV"/>
+                                    <action selector="pickAvatarPressed:" destination="Ley-mZ-U14" eventType="touchUpInside" id="sq3-4F-WFF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUa-WF-ET5">
@@ -401,7 +402,7 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNg-bN-DxF">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNg-bN-DxF" customClass="RoundedButton" customModule="SmartSmack" customModuleProvider="target">
                                 <rect key="frame" x="63" y="597" width="250" height="50"/>
                                 <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -412,6 +413,9 @@
                                 <state key="normal" title="Create Account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createdAccountPressed:" destination="Ley-mZ-U14" eventType="touchUpInside" id="dwz-nt-YXa"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profileDefault" translatesAutoresizingMaskIntoConstraints="NO" id="qMC-a6-xk3">
                                 <rect key="frame" x="137.5" y="315" width="100" height="100"/>
@@ -432,6 +436,7 @@
                                 </state>
                                 <connections>
                                     <action selector="createAccountBtnPressed:" destination="CsG-kX-NiV" eventType="touchUpInside" id="6Ek-cK-O1U"/>
+                                    <action selector="pickBgColorPressed:" destination="Ley-mZ-U14" eventType="touchUpInside" id="lcc-OZ-J5r"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -456,6 +461,10 @@
                         <viewLayoutGuide key="safeArea" id="eN7-OP-hPC"/>
                     </view>
                     <connections>
+                        <outlet property="emailTxt" destination="yoa-jm-PAI" id="6Ap-w9-YfF"/>
+                        <outlet property="passTxt" destination="Wnl-Gj-Mve" id="nFf-aC-Afc"/>
+                        <outlet property="userImg" destination="qMC-a6-xk3" id="CUE-wC-lEz"/>
+                        <outlet property="usernameTxt" destination="Od8-l1-mD3" id="Jzt-Ka-NU9"/>
                         <segue destination="KtR-XL-zwo" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwinWithSegue:" id="aWf-K8-C9W"/>
                     </connections>
                 </viewController>
