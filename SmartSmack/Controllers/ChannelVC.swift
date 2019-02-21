@@ -25,6 +25,9 @@ class ChannelVC: UIViewController {
                                                name: NOTIF_USER_DATA_DID_GHANGE, object: nil)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        setupUserInfo()
+    }
     
     @IBAction func loginBtnPressed(_ sender: Any) {
         if AuthService.instance.isLogginIn {
@@ -38,6 +41,10 @@ class ChannelVC: UIViewController {
     }
     
     @objc func userDataDidChance(_ notif: Notification) {
+        setupUserInfo()
+    }
+    
+    func setupUserInfo() {
         if AuthService.instance.isLogginIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
@@ -50,3 +57,8 @@ class ChannelVC: UIViewController {
         }
     }
 }
+
+
+
+
+
