@@ -5,7 +5,6 @@
 //  Created by Admin on 23/01/19.
 //  Copyright © 2019 Admin. All rights reserved.
 //
-
 import UIKit
 
 class ChatVC: UIViewController {
@@ -22,9 +21,12 @@ class ChatVC: UIViewController {
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
         
         if AuthService.instance.isLogginIn {
-            AuthService.instance.findUserByEmail { (success) in
+            AuthService.instance.findUserByEmail (completion: { (success) in
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_GHANGE, object: nil)
-            }
+            })
+        }
+        MessageService.instance.findAllChannel { (success) in
+            
         }
     }
 
