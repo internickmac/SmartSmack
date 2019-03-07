@@ -36,7 +36,7 @@ class MessageService {
                         let channel = Channel(channelTitle: name, channelDescription: channelDescription, id: id)
                         self.channels.append(channel)
                     }
-                    print(self.channels[1].channelTitle!)
+                    print(self.channels[1].channelTitle)
                     complition(true)
                   }
                 } catch {

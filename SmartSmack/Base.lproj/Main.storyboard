@@ -127,7 +127,7 @@
                                 <rect key="frame" x="0.0" y="126" width="375" height="416"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="63" id="G4e-2d-nZM">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="channelCell" rowHeight="63" id="G4e-2d-nZM" customClass="ChannelCell" customModule="SmartSmack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="63"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G4e-2d-nZM" id="NhE-LY-eml">
@@ -147,6 +147,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="pTh-9T-RTA" id="5IM-bi-kXM"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -180,13 +183,14 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="Y8d-nU-e7R" id="rC0-2D-zzS"/>
+                        <outlet property="tableView" destination="sLF-Kw-QjM" id="aoY-vg-TKl"/>
                         <outlet property="userImg" destination="R1V-OK-dss" id="9vQ-Vh-HNA"/>
                         <segue destination="CsG-kX-NiV" kind="show" identifier="toLogin" id="IR4-Qe-ISP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xib-nd-mBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="976.79999999999995" y="-363.86806596701655"/>
+            <point key="canvasLocation" x="780" y="-359"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="Nw8-76-N6u">
