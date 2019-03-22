@@ -13,11 +13,12 @@ typealias CompletionHandler = (_ Success: Bool) -> ()
 //Url constants
 let BASE_URL = "https://galochat.herokuapp.com/v1/"
 let BASE_URL1 = "http://localhost:3005/v1/"
-let URL_REGISTER = "\(BASE_URL)account/register"
-let URL_LOGIN = "\(BASE_URL)account/login"
-let URL_USER_ADD = "\(BASE_URL)user/add"
-let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
-let URL_GET_CHANNELS = "\(BASE_URL)channel"
+let URL_REGISTER = "\(BASE_URL1)account/register"
+let URL_LOGIN = "\(BASE_URL1)account/login"
+let URL_USER_ADD = "\(BASE_URL1)user/add"
+let URL_USER_BY_EMAIL = "\(BASE_URL1)user/byEmail/"
+let URL_GET_CHANNELS = "\(BASE_URL1)channel"
+let URL_GET_MESSAGES = "\(BASE_URL1)message/byChannel"
 
 //Segues
 let TO_LOGIN = "toLogin"
